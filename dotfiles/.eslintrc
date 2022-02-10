@@ -1,0 +1,68 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+
+  "plugins": ["react", "filenames", "prettier"],
+
+  "globals": {
+    "gon": true,
+    "__CLIENT__": true,
+    "__SERVER__": true
+  },
+
+  "settings": {
+    "import/extensions": [".js", ".jsx"]
+  },
+
+  "rules": {
+    "prettier/prettier": [
+      2,
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 120
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-unresolved": ["off"],
+    "import/no-absolute-path": ["off"],
+    "import/order": ["off"],
+    "import/no-duplicates": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "import/first": ["off"],
+    "import/no-named-as-default-member": ["off"],
+    "import/no-named-as-default": ["off"],
+    "import/prefer-default-export": ["off"],
+    "import/extensions": ["off"],
+    "react/no-array-index-key": ["off"],
+    "filenames/match-exported": 2,
+    "react/prop-types": [
+      2,
+      {
+        "ignore": [
+          "classes",
+          "match",
+          "dictionaries",
+          "errors",
+          "history",
+          "children",
+          "location"
+        ]
+      }
+    ],
+    "no-use-before-define": ["error", { "variables": false }],
+    "no-debugger": ["warn"],
+    "react/destructuring-assignment": 0,
+    "react/static-property-placement": 0
+  }
+}
