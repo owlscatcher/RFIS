@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo rm -rf .git
+
 read -p 'Input project name: ' PROJECT_NAME
 
 mkdir $PROJECT_NAME && cd ./$PROJECT_NAME
