@@ -10,7 +10,7 @@ Just clone repos and start script:
 ```
 git clone https:/github.com/owlscatcher/RFIS \
   cd ./RFIS \
-  sudo chmod +X fast-start.sh \
+  sudo chmod +X init-new-project.sh \
   sh init-new-project.sh
 ```
 
