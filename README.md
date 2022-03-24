@@ -8,7 +8,7 @@ This script:
 ## How tu use?
 Just clone repos and start script:
 ```
-git clone https:/github.com/owlscatcher/RFIS \
+git clone https:/github.com/owlscatcher/RFIS.git \
   cd ./RFIS \
   sudo chmod +X init-new-project.sh \
   sh init-new-project.sh
